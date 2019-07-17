@@ -1,0 +1,12 @@
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "rubocop",
+      "pre-push": "rspec",
+      "...": "..."
+    }
+  },
+  "dependencies": {
+    "husky": "^3.0.0"
+  }
+}
