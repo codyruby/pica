@@ -18,6 +18,8 @@ gem 'puma', '~> 3.11'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -38,6 +40,7 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'annotate'
   gem 'relaxed-rubocop'
   gem 'rubocop', require: false
   gem 'rubocop-rspec'
@@ -49,6 +52,7 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'simplecov', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
